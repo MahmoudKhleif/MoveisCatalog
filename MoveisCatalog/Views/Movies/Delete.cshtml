@@ -48,10 +48,15 @@
             @Html.DisplayFor(model => model.Rate)
         </dd>
     </dl>
+     <div class="col-md-4 offset-4 text-center" style="margin-right=4%">
+                        <img width="100%" id="ImagePreview" />
+                    </div>
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Delete" class="btn" style="background-color: #961A00 ; color: white;" /> |
+        <a asp-action="Index"class="btn" style="background-color: #961A00 ; color: white;">Back to List</a>
     </form>
 </div>
+
+

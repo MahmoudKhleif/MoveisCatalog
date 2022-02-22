@@ -44,16 +44,29 @@
                 <span asp-validation-for="Rate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn" style="background-color: #961A00 ; color: white;" />
             </div>
         </form>
     </div>
+                   <div class="col-md-4 offset-4 text-center" style="margin-right=4%">
+                        <img width="100%" id="ImagePreview" />
+                    </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index"class="btn" style="background-color: #961A00 ; color: white;">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@section Scripts{ 
+    <script>
+        $(document).ready(function () {
+            var output = document.getElementById("ImagePreview");
+            output.src = $("#Image").val();
+        });
+
+        $("#Image").on("change", function () {
+            var output = document.getElementById("ImagePreview");
+            output.src = $(this).val();
+        })
+    </script>
 }
