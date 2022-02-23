@@ -58,6 +58,8 @@ namespace MoveisCatalog
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            //seeding data
+            AppDbInitializer.Seed(app);
         }
     }
 }
