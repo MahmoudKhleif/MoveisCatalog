@@ -15,6 +15,7 @@ The idea of this page is to display movies by cards, and these cards are linked 
 
 
 ## Code example:
+This class can seeding data to database (MovieCategory table)
 ```
  public class AppDbInitializer
     {
@@ -54,14 +55,13 @@ Bootstrap
 Entity framework core 
 
 ## references
-[Bootstrap](https://getbootstrap.com/)
+[Bootstrap](https://getbootstrap.com/)//
 [Microsoft Docs](https://docs.microsoft.com/en-us/)
 
 
 ## Usage:
 
-1: Download SDK 5.0.405
-## Link 
+1: Download .Net SDK 5.0.405
 [Download](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)
 
 2:Update database.
