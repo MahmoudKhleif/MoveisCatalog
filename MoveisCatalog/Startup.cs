@@ -13,9 +13,11 @@ using System.Threading.Tasks;
 
 namespace MoveisCatalog
 {
+    //A simple application that displays movies, their description, rating and year of production. 
     public class Startup
     {
         public Startup(IConfiguration configuration)
+
         {
             Configuration = configuration;
         }
@@ -24,7 +26,7 @@ namespace MoveisCatalog
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        {  // Configure connection string
             services.AddDbContext<AppicationDbcontext>(Options => Options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllersWithViews();
             services.AddControllersWithViews();

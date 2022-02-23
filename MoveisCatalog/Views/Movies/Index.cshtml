@@ -1,5 +1,8 @@
 ﻿@model IEnumerable<MoveisCatalog.Models.Movie>
+@*
 
+The Main index page that display cards 
+*@
 @{
     ViewData["Title"] = "Movies";
 }
@@ -34,12 +37,12 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <img src="@item.Image" width="100%" alt="">
+                                <img src="@item.Image" style ="width:100%;height:350px" alt="">
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body">
-                                    <p class="card-text"><b>Description</b>@item.Description</p>
-                                    <p class="card-text"><b>MovieCategory:</b> @item.MovieCategory.Category</p>
+                                    <p class="card-text"><b>Description : </b>@item.Description</p>
+                                    <p class="card-text"><b>MovieCategory : </b> @item.MovieCategory.Category</p>
                                     <p class="card-text"><b>Year :</b> @item.year</p>
                                     <p class="card-text"><b>@item.Rate </b> <i class="bi bi-star-fill text-warning"></i></p>
                                 </div>

@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MoveisCatalog.Models;
-
+//Dbcontext
 namespace MoveisCatalog.Data
-{
+{   
     public class AppicationDbcontext :DbContext
     {
 

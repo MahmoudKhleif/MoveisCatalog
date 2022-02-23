@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
+//Movie calss which has id as a primery key and MovieCategoryId as a forigen key 
 namespace MoveisCatalog.Models
-{
+{     
     public class Movie
     {   [Key]
         public  int id { get; set; }

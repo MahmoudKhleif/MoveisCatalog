@@ -9,7 +9,7 @@ using MoveisCatalog.Data;
 using MoveisCatalog.Models;
 
 namespace MoveisCatalog.Controllers
-{
+{      //movie table Controller that has Crud system on data base (create, red,update,and delete)
     public class MoviesController : Controller
     {
         private readonly AppicationDbcontext _context;
