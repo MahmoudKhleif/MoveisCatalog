@@ -49,9 +49,9 @@ This class can seeding data to database (MovieCategory table)
 
 
 ## Environment:
-C#,asp.net mvc5
-html/Css/javascript
-Bootstrap
+C#, asp.net, mvc5, 
+html/Css/javascript, 
+Bootstrap, 
 Entity framework core 
 
 ## references
